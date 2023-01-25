@@ -1,10 +1,11 @@
 import React from "react";
-import Greeter from "./components/Greeter";
+import ShoppingList from "./components/ShoppongList";
 
 function App() {
+  const items = [{ id: "1", product: "bag", quantity: 3 }];
   return (
     <div>
-      <Greeter person="sam" />
+      <ShoppingList items={items} />
     </div>
   );
 }
